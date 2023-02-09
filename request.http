@@ -1,0 +1,30 @@
+POST http://127.0.0.1:5000/customer/add
+Content-Type: application/json
+
+{
+    "name" : "Afi",
+    "deliveryAddress" : "Lomé",
+    "contact" : 50525652,
+    "active" : "False"
+}
+
+###
+
+POST http://127.0.0.1:5000/order/add
+Content-Type: application/json
+
+{
+    "createDate" : "2023/02/09",
+    "customer_id" : 1
+}
+
+
+###
+
+POST http://127.0.0.1:5000/payement/add
+Content-Type: application/json
+
+{
+    "amount" : 5043.24,
+    "order_id" : 1
+}
